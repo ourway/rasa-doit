@@ -13,6 +13,7 @@ pipeline:
   - name: DIETClassifier
     epochs: 100
   - name: EntitySynonymMapper
+  - name: DucklingHTTPExtractor
   - name: ResponseSelector
     epochs: 100
 

@@ -11,6 +11,7 @@ from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+import sys
 
 
 class ActionAuth(Action):
@@ -23,5 +24,6 @@ class ActionAuth(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         dispatcher.utter_message(text="you logged in. Thank you!")
+        print(dispatcher, tracker, flush=True, file=sys.stderr)
 
         return []
