@@ -54,3 +54,11 @@
 - are you a human?
 - am I talking to a bot?
 - am I talking to a human?
+
+## intent:login
+- i need to login
+- i want to login
+- could you please sign me in?
+- i want to signin
+- lets login
+- lets sign in

@@ -26,6 +26,10 @@
 * goodbye
   - utter_goodbye
 
+## login path 1
+* login
+  - utter_login
+
 ## bot challenge
 * bot_challenge
   - utter_iamabot

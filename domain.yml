@@ -6,8 +6,12 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - login:
+      triggers: action_auth
 
 responses:
+  utter_login:
+  - text: "I am going to authenticate you!"
   utter_greet:
   - text: "Hey! How are you?"
 
@@ -30,3 +34,6 @@ responses:
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+actions:
+- action_auth
