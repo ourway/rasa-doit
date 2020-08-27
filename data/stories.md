@@ -1,31 +1,25 @@
-## happy path
-* greet
-  - utter_greet
-* mood_great
-  - utter_happy
+## Suggestion Path 1
 
-## sad path 1
 * greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
+    - utter_greet
+* paper_search
+    - utter_what_type
+* inform{"paper_type":"Physics"}
+    - action_paper_search
+    - utter_approve
 * affirm
-  - utter_happy
-
-## sad path 2
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* deny
-  - utter_goodbye
-
-## say goodbye
+    - utter_send_link
 * goodbye
-  - utter_goodbye
+    - utter_goodbye
 
-## bot challenge
-* bot_challenge
-  - utter_iamabot
+## Suggestion Path 2
+* greet
+    - utter_greet
+* paper_search{"paper_type": "chatbots"}
+    - action_paper_search
+    - utter_approve
+* affirm+authors
+    - utter_send_link
+    - utter_authors
+* thanks
+    - utter_happy_reading
