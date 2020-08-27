@@ -1,1 +1,0 @@
-{"0": "affirm", "1": "affirm+authors", "2": "authors", "3": "deny", "4": "goodbye", "5": "goodbye+thanks", "6": "greet", "7": "inform", "8": "paper_search", "9": "send_link", "10": "speak+multi_person", "11": "speak+single_person", "12": "thanks"}
